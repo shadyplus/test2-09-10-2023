@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Loss Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .question {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .answers {
+            display: flex;
+            flex-direction: column;
+        }
+        .answer {
+            margin: 5px 0;
+        }
+        .btn {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        .results {
+            text-align: center;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Weight Loss Quiz</h1>
+        <div id="quiz">
+            <div class="question" id="question1">
+                Question 1: What is the recommended daily water intake for weight loss?
+            </div>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q1" value="a">a) 4 cups</label>
+                <label class="answer"><input type="radio" name="q1" value="b">b) 8 cups</label>
+                <label class="answer"><input type="radio" name="q1" value="c">c) 12 cups</label>
+            </div>
+
+            <div class="question" id="question2">
+                Question 2: Which of the following is a healthy source of protein for weight loss?
+            </div>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q2" value="a">a) Potato chips</label>
+                <label class="answer"><input type="radio" name="q2" value="b">b) Lean chicken breast</label>
+                <label class="answer"><input type="radio" name="q2" value="c">c) Ice cream</label>
+            </div>
+
+            <div class="question" id="question3">
+                Question 3: What is the recommended duration of cardiovascular exercise for weight loss?
+            </div>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q3" value="a">a) 5 minutes</label>
+                <label class="answer"><input type="radio" name="q3" value="b">b) 30 minutes</label>
+                <label class="answer"><input type="radio" name="q3" value="c">c) 2 hours</label>
+            </div>
+            <div class="question" id="question3">
+                Question 4: what is your weight ?
+            </div>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q3" value="a">a) 55 KG </label>
+                <label class="answer"><input type="radio" name="q3" value="b">b) 70 KG </label>
+                <label class="answer"><input type="radio" name="q3" value="c">c) 80 KG </label>
+            </div>
+
+            <button class="btn" onclick="calculateScore()">Submit</button>
+        </div>
+
+        <div class="results" id="results">
+            <h2>your result</h2>
+            <p>you have to lose 15KG and we will recommend to you medicine that will help you to lose weight fast ans safe. its natural product 100%</p>
+        </div>
+    </div>
+
+    <script>
+        function calculateScore() {
+            document.getElementById("quiz").style.display = "none";
+            document.getElementById("results").style.display = "block";
+        }
+    </script>
+</body>
+</html>
