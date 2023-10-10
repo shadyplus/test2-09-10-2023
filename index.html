@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="./style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
     <title>Weight Loss Quiz</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background: url(./img/—Pngtree—professional\ weight\ loss\ flyer\ background_1097753.jpg);
+            background-size: 100% 100%;
+
         }
         .container {
-            max-width: 600px;
+            max-width: 1050px;
             margin: 0 auto;
             padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
         }
         h1 {
             text-align: center;
         }
         .question {
-            font-size: 18px;
+            font-size: 22px;
+            color: darkred;
             margin-bottom: 10px;
+            font-weight: 700;
+            background: #fb8ecf59;
+            border-radius: 27px;
+            padding: 8px;
+            
         }
         .answers {
             display: flex;
             flex-direction: column;
+
         }
         .answer {
             margin: 5px 0;
+            font-size: x-large;
+    font-weight: 600;
         }
         .btn {
-            background-color: #007BFF;
-            color: #fff;
-            padding: 10px 20px;
+            background-color: darkred;
+    border-radius: 20px;
+    font-weight: 700;
+    color: white;
+    font-size: 19px;
+    padding: 10px 20px;
             border: none;
             cursor: pointer;
         }
@@ -38,53 +58,332 @@
             text-align: center;
             display: none;
         }
+        .btn:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+h1 {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+li{
+    font-weight: 600;
+    font-size: 20px;
+    /* text-align: center; */
+}
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Weight Loss Quiz</h1>
+        
+       
         <div id="quiz">
+            <h1>
+                مرحباً بكم في المدونة الصحية للجميع 
+            </h1>
+            <h1>هل تريد فقدان الوزن بطريقة صحيحة و صحية ؟ </h1>
+        <h1> فقط عليك الإجابة عن هذه الأسئلة و سوف نوضح لك ما هي نصيحة المختصين لك </h1>
+        <div style="text-align: center;">
+            <!-- <img style="max-width: 100%; " src="./img/arrows.png" alt=""> -->
+            <img style="max-width: 100%;max-width: 100%;    height: 600px; " id="img1" src="./img/4.png" alt="">
+        </div>
             <div class="question" id="question1">
-                Question 1: What is the recommended daily water intake for weight loss?
+                سؤال 1: ما هو وزنك ؟ 
             </div>
             <div class="answers">
-                <label class="answer"><input type="radio" name="q1" value="a">a) 4 cups</label>
-                <label class="answer"><input type="radio" name="q1" value="b">b) 8 cups</label>
-                <label class="answer"><input type="radio" name="q1" value="c">c) 12 cups</label>
+                <label class="answer"><input type="radio" name="q1" value="a">1) أكثر من 60 كجم</label>
+                <label class="answer"><input type="radio" name="q1" value="b">2)  أقل من 80 كجم</label>
+                <label class="answer"><input type="radio" name="q1" value="c">3)  أكثر من 80 كجم</label>
             </div>
 
             <div class="question" id="question2">
-                Question 2: Which of the following is a healthy source of protein for weight loss?
+                سؤال 2: هل تمارس رياضة المشي ؟
             </div>
             <div class="answers">
-                <label class="answer"><input type="radio" name="q2" value="a">a) Potato chips</label>
-                <label class="answer"><input type="radio" name="q2" value="b">b) Lean chicken breast</label>
-                <label class="answer"><input type="radio" name="q2" value="c">c) Ice cream</label>
+                <label class="answer"><input type="radio" name="q2" value="a">1) 1 ساعة في اليوم</label>
+                <label class="answer"><input type="radio" name="q2" value="b">2) 1-3 ساعات في اليوم </label>
+                <label class="answer"><input type="radio" name="q2" value="c">3) أكثر من 3 ساعات في اليوم </label>
             </div>
 
             <div class="question" id="question3">
-                Question 3: What is the recommended duration of cardiovascular exercise for weight loss?
+                سؤال 3: كم مرة في الشهر تتناول الوجبات السريعة؟
+
             </div>
             <div class="answers">
-                <label class="answer"><input type="radio" name="q3" value="a">a) 5 minutes</label>
-                <label class="answer"><input type="radio" name="q3" value="b">b) 30 minutes</label>
-                <label class="answer"><input type="radio" name="q3" value="c">c) 2 hours</label>
+                <label class="answer"><input type="radio" name="q3" value="a">1)  أقل من 5 مرات</label>
+                <label class="answer"><input type="radio" name="q3" value="b">2) أقل من 10 مرات</label>
+                <label class="answer"><input type="radio" name="q3" value="c">3) أكثر من 10 مرات </label>
+            </div>
+            <div style="text-align: center;">
+            <img id="img1" style="max-width: 100%;    height: 600px;" src="./img/kisspng-stock-photography-royalty-free-fat-clip-art-weight-loss-success-man-5a93dea6d964f9.0268196215196402308905.png" alt="">
+        </div>
+            <div class="question" id="question3">
+                سؤال 4: هل تمارس الرياضة ؟ 
+            </div>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q3" value="a">1) نادراً </label>
+                <label class="answer"><input type="radio" name="q3" value="b">2) أحياناً </label>
+                <label class="answer"><input type="radio" name="q3" value="c">3) دائماً  </label>
             </div>
             <div class="question" id="question3">
-                Question 4: what is your weight ?
+                سؤال 5: كم وجبة تتناول في اليوم؟
+ 
             </div>
             <div class="answers">
-                <label class="answer"><input type="radio" name="q3" value="a">a) 55 KG </label>
-                <label class="answer"><input type="radio" name="q3" value="b">b) 70 KG </label>
-                <label class="answer"><input type="radio" name="q3" value="c">c) 80 KG </label>
+                <label class="answer"><input type="radio" name="q3" value="a">1) وجبتين </label>
+                <label class="answer"><input type="radio" name="q3" value="b">2) ثلاث وجبات </label>
+                <label class="answer"><input type="radio" name="q3" value="c">3) أكثر من ثلاث وجبات  </label>
+            </div>
+           
+            
+            <div class="question" id="question3">
+                سؤال 6: كم ساعة تعمل باليوم ؟  
+            </div>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q3" value="a">1) ستة ساعات </label>
+                <label class="answer"><input type="radio" name="q3" value="b">2) ثمانية ساعات </label>
+                <label class="answer"><input type="radio" name="q3" value="c">3) أكثر من ثمانية ساعات  </label>
+            </div>
+            <div class="question" id="question3">
+                سؤال 7 : هل تعمل من المنزل ام تذهب كل يوم لمكتب ؟  
+            </div>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q3" value="a">1) أعمل من المنزل  </label>
+                <label class="answer"><input type="radio" name="q3" value="b">2) أعمل في مكتب و أذهب يومياً </label>
+                <label class="answer"><input type="radio" name="q3" value="c">3) أحياناً من المنزل و أحياناً في المكتب  </label>
+            </div>
+            <div style="text-align: center;">
+                <img style="max-width: 100%;     height: 600px;" id="img1" src="./img/123.png" alt="">
+            </div>
+            <div class="question" id="question3">
+                سؤال 8: كم طولك ؟  
+            </div>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q3" value="a">1)  150 سم </label>
+                <label class="answer"><input type="radio" name="q3" value="b">2) 150 - 170 سم </label>
+                <label class="answer"><input type="radio" name="q3" value="c">3) 170 - 185 سم </label>
+            </div>
+            
+            <div style="text-align: center;">
+                <img style="max-width: 100%;     height: 600px;" id="img1" src="./img/clipart2758241.png" alt="">
             </div>
 
-            <button class="btn" onclick="calculateScore()">Submit</button>
+            <div class="question" id="question3">
+                سؤال 9: هل تعاني من أي مشاكل صحية مثل السكر او الضغط و غيرهم ؟ 
+            </div>
+            <div class="answers">
+                <label class="answer"><input type="radio" name="q3" value="a">1) نعم </label>
+                <label class="answer"><input type="radio" name="q3" value="b">2) لا </label>
+                <label class="answer"><input type="radio" name="q3" value="c">3) لا أعرف   </label>
+            </div>
+            <div style="text-align: center;">
+                <button class="btn" onclick="calculateScore()">تأكيد الإجابات </button>
+
+            </div>
         </div>
 
-        <div class="results" id="results">
-            <h2>your result</h2>
-            <p>you have to lose 15KG and we will recommend to you medicine that will help you to lose weight fast ans safe. its natural product 100%</p>
+        <div style="text-align: center;" class="results" id="results">
+            <h3 style="text-align: center;">
+                &darr; هذه هي نتائج إجاباتك و نصائح المختصين &darr;
+            </h3>
+            <h2 style="text-align: center;"> نصيحة 1 : </h2>
+            <p style="text-align: center;">يجب عليك فقدان من 5-10 كجم على الأقل </p>
+            <h2 style="text-align: center;"> نصيحة 2 : </h2>
+            <p style="text-align: center;"> تحتاج إلى فيتامينات : فيتامين ب3 - فيتامين ب5 - فيتامين ب6 . </p>
+            <h2 style="text-align: center;"> نصيحة 3 : </h2>
+            <p style="text-align: center;"> النصيحة الثانية لك هي الكثرة من تناول هذه المنتجات :  </p>
+            <ol>
+                <li>
+                    الكافيين
+                </li>
+                <p>
+                    الكافيين هو محفز للجهاز العصبي المركزي يعمل على زيادة معدل الأيض وتحفيز حرق الدهون. يمكن أن يساعد الكافيين في تقليل الشهية وزيادة الطاقة والتحفيز العام.
+                </p>
+                <li>
+                    سكرالوز
+                </li>
+                <p>
+                    يعتبر السكرالوز منخفض السعرات الحرارية، حيث يحتوي على نسبة قليلة جدًا من السعرات الحرارية بالمقارنة مع السكر العادي. وهو مشتق من نبتة الستيفيا.
+                </p>
+                <li>
+                     الزنجبيل
+                </li>
+                <p>
+                    خلاصة الزنجبيل هي مادة طبيعية مضادة للأكسدة ومضادة للالتهابات. يمكن أن تساعد خلاصة الزنجبيل في تقليل التهابات الجسم وتحسين الجهاز الهضمي.
+                </p>
+                <li>
+                    الخروب
+                </li>
+                <p>
+                    يحتوي الخروب على نسبة عالية من الألياف الغذائية، وهي تعتبر أحد عوامل الشبع والإحساس بالامتلاء بعد تناول الطعام. قد يساعد تناول الألياف الغذائية في زيادة الشبع وتقليل الرغبة في تناول الطعام بكميات كبيرة، مما يمكن أن يؤدي إلى تقليل السعرات الحرارية المستهلكة.
+                </p>
+            </ol>
+            <p style="text-align: center;"> من الممكن ان يكون من الصعب إيجاد كل هذه المنتجات معاً لذا نحن ننصحك بمنتج لديه كل هذه المكونات معاً و هو منتج طبيعي 100% و يسمى <a href="#forma" style="font-weight: 700;
+    text-decoration: none;">LEPTIGEN</a> </p>
+            <div style="text-align: center;">
+                <img style="max-width: 100%;  "  src="./img/pack.png" alt="">
+            </div>
+            <h2 style="text-align: center;">
+                هذه  بعض النتائج بعد تجربة المنتج المعجزة <a href="#forma" style="font-weight: 700;
+    text-decoration: none;">LEPTIGEN</a> وتمكنوا جميعا من خسارة الوزن الزائد بسهولة في فترة زمنية قصيرة بفضل المنتج: <a href="#forma" style="font-weight: 700;
+    text-decoration: none;">LEPTIGEN</a>!
+            </h2>
+            <div style="text-align: center;">
+                <a href="#forma"><img style="max-width: 100%; width: 600px;border: 2px solid;
+                    border-radius: 32px;"  src="./img/result_1.jpg" alt=""></a>
+                <a href="#forma"><img style="max-width: 100%; width: 600px;border: 2px solid;
+                    border-radius: 32px;"  src="./img/result_2.jpg" alt=""></a>
+                <a href="#forma"><img style="max-width: 100%; width: 600px;border: 2px solid;
+                    border-radius: 32px;"  src="./img/result_3.jpg" alt=""></a>
+                <a href="#forma"><img style="max-width: 100%; width: 600px;border: 2px solid;
+                    border-radius: 32px;"  src="./img/result4.jpg" alt=""></a>
+                
+                
+                
+                
+            </div>
+            <h3>
+                <a href="#forma" style="font-weight: 700;
+    text-decoration: none;">LEPTIGEN</a> هو منتج مضمون و مصدق عليه و هذه هي شهادة التصديق 
+            </h3>
+            <div style="text-align: center;">
+                <a href="#forma"><img style="max-width: 100%; width: 600px;border: 2px solid;
+                    border-radius: 32px;"  src="./img/sertificate.png" alt=""></a>
+                
+            </div>
+            <h3>
+                فوائد <a href="#forma" style="font-weight: 700;
+    text-decoration: none;">LEPTIGEN</a> :
+            </h3>
+            <ol style="list-style: none; padding: 0;">
+                <li style="margin-bottom: 10px;">
+                    ✅ يحسن عملية الهضم ويمنع انتفاخ البطن.
+
+                </li>
+                <li style="margin-bottom: 10px;">
+                    ✅ يجبر الجسم على حرق المزيد من الدهون حتى في حالة الاسترخاء.
+
+                </li>
+                <li style="margin-bottom: 10px;">
+                    ✅ يساعد على ضبط نسبة السكر في الدم.
+
+                </li>
+                <li style="margin-bottom: 10px;">
+                    ✅ يساعد على خفض نسبة الكوليسترول في الدم.
+
+                </li>
+                <li style="margin-bottom: 10px;">
+                    ✅ مثالي لمشاكل الوزن الزائد.
+
+                </li>
+                <li style="margin-bottom: 10px;">
+                    ✅ تسريع عملية حرق الدهون
+
+                </li>
+                <li style="margin-bottom: 10px;">
+                    ✅ فعال جدا ضد التعب والإرهاق.
+                </li>
+            </ol>
+            <h3>
+                ينصح به العديد من المختصين
+
+            </h3>
+            <div style="text-align: center;">
+                <a href="#forma"> <img style="max-width: 100%; width: 600px;border: 2px solid;border-radius: 32px;"  src="./img/doctor 2.png" alt=""></a>
+                <a href="#forma"><img style="max-width: 100%; width: 600px;border: 2px solid;border-radius: 32px;"  src="./img/doctor.png" alt=""></a>
+            </div>
+            <h3 style="text-align: center;" >
+                يمكنكم طلب المنتج لأول مرة في  الجزائر الأن !
+            </h3>
+            <h3>
+                خطوات طلب المنتج :
+            </h3>
+            <ul>
+                <li>
+                    أملأ النموذج بالأٍسفل واترك اسمك ورقم هاتفك
+                </li>
+                <li>
+                    إنتظر مكالمة من مختص من الشركة الموزعة للمنتج لتأكيد عنوان الإستلام معك و الإجابة على جميع أسئلتك
+
+                </li>
+                <li>
+                    بعد ذلك سوف تستلم المنتج و أيضاً الدفع عند الإستلام
+                </li>
+            </ul>
+            <div style="text-align: center; border: 2px solid ; border-radius: 30px;    padding-bottom: 10px;
+            max-width: fit-content;
+    margin: auto;
+    padding: 15px;">
+                <h3 style="text-align: center;">
+                    استمارة الطلب الرسمية
+
+                </h3>
+                <div id="forma" style="text-align: center;">
+                    <img style="max-width: 100%; width: 600px;"  src="./img/prod.png" alt="">
+                   
+                </div>
+                <p style="text-align: center;font-weight: 500;
+                font-size: large;">
+                    يوجد تخفيض حتى يوم 
+                    
+                    <span style="font-weight: 600;
+                    color: red;
+                    font-size: larger;
+                    background: black;
+                    border-radius: 20px;
+                    padding: 3px;">
+                        <script type="text/javascript">
+                            d = new Date(); p = new Date(d.getTime() -  -1*86400000);
+                            monthA =  '01,02,03,04,05,06,07,08,09,10,11,12'.split(',');
+                            var w = p.getDate();
+                            document.write(p.getDate() + '.' + monthA[p.getMonth()] +'.'+ p.getFullYear());
+                        </script> 
+                    </span> وهو تخفيض بنسبة <span style="color: red; font-weight: 700;"> 50% </span> عند شرائك دورة <a href="#forma" style="font-weight: 700;
+    text-decoration: none;">LEPTIGEN</a>.
+                </p>
+                <h3 style="text-align: center;">
+                    السعر : <span style="    font-size: 32px;
+                    ">5999 DINAR</span>
+                </h3>
+                <h4 style="text-align: center; margin: 0;">
+                    بدلاً من <span style="text-decoration: line-through;">11998 DINAR</span>
+                </h4>
+                <p style="text-align: center;">
+                    عند شرائك دورة <a href="#forma" style="font-weight: 700;
+    text-decoration: none;">LEPTIGEN</a>
+                </p>
+                <h3 style="text-align: center;">
+                    أدخل إسمك هنا من فضلك
+                </h3>
+                <input style="margin: 5px 0;
+                border-radius: 4px;
+                border: 1px solid #371905;
+                font-size: 16px;
+                padding: 8px 10px;
+                width: 100%;
+                max-width: 270px;
+            "  type="text" name="name" required="required" placeholder="الإسم " autocomplete="name">
+                <h3 style="text-align: center;">
+                    أدخل رقم هاتفك هنا من فضلك
+                </h3>
+                <input style="margin: 5px 0; text-align: left;
+                border-radius: 4px;
+                border: 1px solid #371905;
+                font-size: 16px;
+                padding: 8px 10px;
+                width: 100%;
+                max-width: 270px; direction: ltr;
+            "  type="text" name="phone" required="required" placeholder="أدخل رقم هاتفك هنا  " autocomplete="name">
+             <div style="text-align: center;">
+                <button class="btn" > إتمام الطلب  </button>
+
+            </div>
+            </div>
+            
+
+
+
+
         </div>
     </div>
 
@@ -93,6 +392,25 @@
             document.getElementById("quiz").style.display = "none";
             document.getElementById("results").style.display = "block";
         }
+        
     </script>
+    <script>
+        function calculateScore() {
+            
+            var q1Answered = document.querySelector('input[name="q1"]:checked');
+            var q2Answered = document.querySelector('input[name="q2"]:checked');
+            var q3Answered = document.querySelector('input[name="q3"]:checked');
+    
+            if (q1Answered && q2Answered && q3Answered) {
+                
+                document.getElementById("quiz").style.display = "none";
+                document.getElementById("results").style.display = "block";
+            } else {
+                
+                alert("نرجو الإجابة عن كل الأسئلة و بعد ذلك الضغط على زر تأكيد الإجابات");
+            }
+        }
+    </script>
+    
 </body>
 </html>
