@@ -121,18 +121,18 @@ li{
                 سؤال 4: هل تمارس الرياضة ؟ 
             </div>
             <div class="answers">
-                <label class="answer"><input type="radio" name="q3" value="a">1) نادراً </label>
-                <label class="answer"><input type="radio" name="q3" value="b">2) أحياناً </label>
-                <label class="answer"><input type="radio" name="q3" value="c">3) دائماً  </label>
+                <label class="answer"><input type="radio" name="q4" value="a">1) نادراً </label>
+                <label class="answer"><input type="radio" name="q4" value="b">2) أحياناً </label>
+                <label class="answer"><input type="radio" name="q4" value="c">3) دائماً  </label>
             </div>
             <div class="question" id="question3">
                 سؤال 5: كم وجبة تتناول في اليوم؟
  
             </div>
             <div class="answers">
-                <label class="answer"><input type="radio" name="q3" value="a">1) وجبتين </label>
-                <label class="answer"><input type="radio" name="q3" value="b">2) ثلاث وجبات </label>
-                <label class="answer"><input type="radio" name="q3" value="c">3) أكثر من ثلاث وجبات  </label>
+                <label class="answer"><input type="radio" name="q5" value="a">1) وجبتين </label>
+                <label class="answer"><input type="radio" name="q5" value="b">2) ثلاث وجبات </label>
+                <label class="answer"><input type="radio" name="q5" value="c">3) أكثر من ثلاث وجبات  </label>
             </div>
            
             
@@ -140,17 +140,17 @@ li{
                 سؤال 6: كم ساعة تعمل باليوم ؟  
             </div>
             <div class="answers">
-                <label class="answer"><input type="radio" name="q3" value="a">1) ستة ساعات </label>
-                <label class="answer"><input type="radio" name="q3" value="b">2) ثمانية ساعات </label>
-                <label class="answer"><input type="radio" name="q3" value="c">3) أكثر من ثمانية ساعات  </label>
+                <label class="answer"><input type="radio" name="q6" value="a">1) ستة ساعات </label>
+                <label class="answer"><input type="radio" name="q6" value="b">2) ثمانية ساعات </label>
+                <label class="answer"><input type="radio" name="q6" value="c">3) أكثر من ثمانية ساعات  </label>
             </div>
             <div class="question" id="question3">
                 سؤال 7 : هل تعمل من المنزل ام تذهب كل يوم لمكتب ؟  
             </div>
             <div class="answers">
-                <label class="answer"><input type="radio" name="q3" value="a">1) أعمل من المنزل  </label>
-                <label class="answer"><input type="radio" name="q3" value="b">2) أعمل في مكتب و أذهب يومياً </label>
-                <label class="answer"><input type="radio" name="q3" value="c">3) أحياناً من المنزل و أحياناً في المكتب  </label>
+                <label class="answer"><input type="radio" name="q7" value="a">1) أعمل من المنزل  </label>
+                <label class="answer"><input type="radio" name="q7" value="b">2) أعمل في مكتب و أذهب يومياً </label>
+                <label class="answer"><input type="radio" name="q7" value="c">3) أحياناً من المنزل و أحياناً في المكتب  </label>
             </div>
             <div style="text-align: center;">
                 <img style="max-width: 100%;     height: 600px;" id="img1" src="./img/123.png" alt="">
@@ -159,9 +159,9 @@ li{
                 سؤال 8: كم طولك ؟  
             </div>
             <div class="answers">
-                <label class="answer"><input type="radio" name="q3" value="a">1)  150 سم </label>
-                <label class="answer"><input type="radio" name="q3" value="b">2) 150 - 170 سم </label>
-                <label class="answer"><input type="radio" name="q3" value="c">3) 170 - 185 سم </label>
+                <label class="answer"><input type="radio" name="q8" value="a">1)  150 سم </label>
+                <label class="answer"><input type="radio" name="q8" value="b">2) 150 - 170 سم </label>
+                <label class="answer"><input type="radio" name="q8" value="c">3) 170 - 185 سم </label>
             </div>
             
             <div style="text-align: center;">
@@ -172,9 +172,9 @@ li{
                 سؤال 9: هل تعاني من أي مشاكل صحية مثل السكر او الضغط و غيرهم ؟ 
             </div>
             <div class="answers">
-                <label class="answer"><input type="radio" name="q3" value="a">1) نعم </label>
-                <label class="answer"><input type="radio" name="q3" value="b">2) لا </label>
-                <label class="answer"><input type="radio" name="q3" value="c">3) لا أعرف   </label>
+                <label class="answer"><input type="radio" name="q9" value="a">1) نعم </label>
+                <label class="answer"><input type="radio" name="q9" value="b">2) لا </label>
+                <label class="answer"><input type="radio" name="q9" value="c">3) لا أعرف   </label>
             </div>
             <div style="text-align: center;">
                 <button class="btn" onclick="calculateScore()">تأكيد الإجابات </button>
@@ -400,6 +400,12 @@ li{
             var q1Answered = document.querySelector('input[name="q1"]:checked');
             var q2Answered = document.querySelector('input[name="q2"]:checked');
             var q3Answered = document.querySelector('input[name="q3"]:checked');
+            var q3Answered = document.querySelector('input[name="q4"]:checked');
+            var q3Answered = document.querySelector('input[name="q5"]:checked');
+            var q3Answered = document.querySelector('input[name="q6"]:checked');
+            var q3Answered = document.querySelector('input[name="q7"]:checked');
+            var q3Answered = document.querySelector('input[name="q8"]:checked');
+            var q3Answered = document.querySelector('input[name="q9"]:checked');
     
             if (q1Answered && q2Answered && q3Answered) {
                 
